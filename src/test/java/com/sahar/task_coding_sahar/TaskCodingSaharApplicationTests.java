@@ -3,6 +3,8 @@ package com.sahar.task_coding_sahar;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
+
 import java.util.Map;
 
 //Junit Tests
@@ -62,9 +64,7 @@ class TaskCodingSaharApplicationTests {
     void text_Analyzer_Consonants() {
         Map<String, Integer> textAnalyzer = TextAnalyzer.analyse(new String[]{"consonants", "gsdfuagsf"});
         assertEquals(4, textAnalyzer.size(), "size of map is wrong.");
-        assertEquals(null, textAnalyzer.get("U"), "wrong U count.");
-
-
+        assertNull(textAnalyzer.get("U"), "wrong U count.");
     }
 
     /**
@@ -74,7 +74,7 @@ class TaskCodingSaharApplicationTests {
     void text_Analyzer_vowels() {
         Map<String, Integer> textAnalyzer = TextAnalyzer.analyse(new String[]{"vowels", "iueugdal"});
         assertEquals(5, textAnalyzer.size(), "size of map is wrong.");
-        assertEquals(null, textAnalyzer.get("D"), "wrong D count.");
+        assertNull(textAnalyzer.get("D"), "wrong D count.");
 
     }
 
