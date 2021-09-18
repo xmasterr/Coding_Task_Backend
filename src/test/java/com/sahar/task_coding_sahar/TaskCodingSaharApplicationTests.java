@@ -64,6 +64,7 @@ class TaskCodingSaharApplicationTests {
         assertEquals(4, textAnalyzer.size(), "size of map is wrong.");
         assertEquals(null, textAnalyzer.get("U"), "wrong U count.");
 
+
     }
 
     /**
