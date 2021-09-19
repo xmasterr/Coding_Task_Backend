@@ -75,7 +75,5 @@ class TaskCodingSaharApplicationTests {
         Map<String, Integer> textAnalyzer = TextAnalyzer.analyse(new String[]{"vowels", "iueugdal"});
         assertEquals(5, textAnalyzer.size(), "size of map is wrong.");
         assertNull(textAnalyzer.get("D"), "wrong D count.");
-
     }
-
 }
